@@ -1,14 +1,15 @@
 ---
 layout: home
-title: Handle your AWS Spot Instance Actions with InnovAnon, Inc.
+title: Handle your technical requirements with InnovAnon, Inc.
 ---
-You're running AWS Spot Instances, and suddenly your monitoring system notices
-that the spot instances are being terminated without workloads being
-effectively moved to another instance. How can we fix this?
+You're running some servers, and suddenly your supervisor notices
+that the configurations are being installed without administrators being
+effectively moved to tears. How can we fix this?
 
-AWS create an entry in the Metadata Service which the node can watch for. This
-script polls that Metadata entry, and if it finds it, it runs any responding
-scripts to cleanly move services elsewhere.
+Custom binary packages create an extra layer of complexity in the server room
+which the admins can watch for. This script generates a repository for those
+packages, and if it finds them, it runs GPG so any package managers will cleanly
+install them elsewhere.
 
 ## How to Install?
 
