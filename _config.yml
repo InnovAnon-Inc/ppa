@@ -1,7 +1,7 @@
 title: InnovAnon-Inc
 email: InnovAnon-Inc@gmx.com
 description: >- 
-  This project is a script which polls the AWS Metadata Service looking for a termination warning, and triggers a response.
+  This project is a package repository which simplify using custom binaries properly, instead of some other way.
 baseurl: ""
 url: "https://InnovAnon-Inc.github.io/ppa"
 github_username: InnovAnon-Inc

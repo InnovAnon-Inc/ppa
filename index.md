@@ -15,40 +15,40 @@ install them elsewhere.
 
 ### Individually
 
-Get the latest release from [terminate-notice/terminate-notice](
-https://github.com/terminate-notice/terminate-notice/releases/latest)
+Get the latest release from [InnovAnon-Inc/ppa](
+https://github.com/InnovAnon-Inc/ppa/releases/latest)
 
 You will also need to install the appropriate actions, which are available from:
 
-* [terminate-notice/terminate-notice-announce](
-https://github.com/terminate-notice/terminate-notice-announce/releases/latest)
-* [terminate-notice/terminate-notice-datadog](
-https://github.com/terminate-notice/terminate-notice-datadog/releases/latest)
-* [terminate-notice/terminate-notice-slack](
-https://github.com/terminate-notice/terminate-notice-slack/releases/latest)
-* [terminate-notice/terminate-notice-shutdown](
-https://github.com/terminate-notice/terminate-notice-shutdown/releases/latest)
+* [InnovAnon-Inc/ppa-announce](
+https://github.com/InnovAnon-Inc/ppa-announce/releases/latest)
+* [InnovAnon-Inc/ppa-datadog](
+https://github.com/InnovAnon-Inc/ppa-datadog/releases/latest)
+* [InnovAnon-Inc/ppa-slack](
+https://github.com/InnovAnon-Inc/ppa-slack/releases/latest)
+* [InnovAnon-Inc/ppa-shutdown](
+https://github.com/InnovAnon-Inc/ppa-shutdown/releases/latest)
 
 ### Add a Debian Repository
 
-Download the [public key](terminate-notice.gpg) and put it in
-`/etc/apt/keyrings/terminate-notice.gpg`. You can achieve this with:
+Download the [public key](InnovAnon-Inc.gpg) and put it in
+`/etc/apt/keyrings/InnovAnon-Inc.gpg`. You can achieve this with:
 
 ```
-wget -qO- {{ site.url }}/terminate-notice.asc | sudo tee /etc/apt/keyrings/terminate-notice.asc >/dev/null
+wget -qO- {{ site.url }}/InnovAnon-Inc.asc | sudo tee /etc/apt/keyrings/InnovAnon-Inc.asc >/dev/null
 ```
 
 Next, create the source in `/etc/apt/sources.list.d/`
 
 ```
-echo "deb [arch=all signed-by=/etc/apt/keyrings/terminate-notice.asc] {{ site.url }}/deb stable main" | sudo tee /etc/apt/sources.list.d/terminate-notice.list >/dev/null
+echo "deb [arch=all signed-by=/etc/apt/keyrings/InnovAnon-Inc.asc] {{ site.url }}/deb stable main" | sudo tee /etc/apt/sources.list.d/InnovAnon-Inc.list >/dev/null
 ```
 
 Then run `apt update && apt install -y` followed by the names of the packages you want to install.
 
 ### Add a RPM Repository
 
-Download the repo file `cd /etc/yum.repos.d ; curl {{ site.url }}/terminate-notice.repo -LO`
+Download the repo file `cd /etc/yum.repos.d ; curl {{ site.url }}/InnovAnon-Inc.repo -LO`
 
 Then you can do `yum install -y` followed by the names of the packages you want to install.
 
@@ -56,18 +56,18 @@ Then you can do `yum install -y` followed by the names of the packages you want 
 
 Currently these are:
 
-* terminate-notice
-* terminate-notice-announce
-* terminate-notice-datadog
-* terminate-notice-shutdown
-* terminate-notice-slack
+* InnovAnon-Inc
+* InnovAnon-Inc-announce
+* InnovAnon-Inc-datadog
+* InnovAnon-Inc-shutdown
+* InnovAnon-Inc-slack
 
 ## After installing the packages
 
-You should configure settings that are installed into `/etc/terminate-notice.conf.d/` and then run
+You should configure settings that are installed into `/etc/InnovAnon-Inc.conf.d/` and then run
 
 ```
-systemctl enable --now terminate-notice.service
+systemctl enable --now InnovAnon-Inc.service
 ```
 
 ## How to contribute?
@@ -77,7 +77,7 @@ Please contribute changes and bug reports in the relevant repository above.
 Have a security issue? Please email [Jon](mailto:jon@sprig.gs) with details.
 
 Have your own action? Please create a 
-[pull request on this repository](https://github.com/terminate-notice/terminate-notice.github.io/pulls).
+[pull request on this repository](https://github.com/InnovAnon-Inc/InnovAnon-Inc.github.io/pulls).
 
 ## Related
 
@@ -87,3 +87,4 @@ You might find [this document from AWS](https://docs.aws.amazon.com/AWSEC2/lates
 
 This script was created during my first month at [Dice.FM](https://dice.fm),
 who very generously permitted me to release this code publically.
+
