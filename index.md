@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Handle your AWS Spot Instance Actions with terminate-notice
+title: Handle your AWS Spot Instance Actions with InnovAnon, Inc.
 ---
 You're running AWS Spot Instances, and suddenly your monitoring system notices
 that the spot instances are being terminated without workloads being

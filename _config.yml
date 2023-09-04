@@ -1,10 +1,10 @@
-title: terminate-notice
-email: jon@sprig.gs
+title: InnovAnon-Inc
+email: InnovAnon-Inc@gmx.com
 description: >- 
   This project is a script which polls the AWS Metadata Service looking for a termination warning, and triggers a response.
 baseurl: ""
-url: "https://terminate-notice.github.io"
-github_username: terminate-notice
+url: "https://InnovAnon-Inc.github.io/ppa"
+github_username: InnovAnon-Inc
 
 # Build settings
 theme: minima
@@ -13,3 +13,4 @@ plugins:
 exclude:
   - tools/
   - doc/
+
